@@ -1,0 +1,309 @@
+html {
+   
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {     
+    box-sizing: inherit;    
+}
+
+/*paleta de colores*/
+:root{
+    ---fondo: #F8EEFF;
+    ---negro: #000;
+    --fuentep:"Roboto", sans-serif;
+
+}
+
+
+@media(min-width: 768px){
+    .body{
+        width: auto;  /*que sea automatico*/
+    }
+}
+
+
+@media(min-width:768px){
+    .header_body{
+        width: auto;
+    }
+}
+
+@media(min-width:768px){
+    .header__texto{
+        width: auto;
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 768px){
+    .header{
+        width: auto;
+    }
+}
+
+
+
+h1 {
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+/*editamos el h3 de SOBRE NOSOTROS*/
+h3{
+   font-size: 4.5rem;
+   text-align: center;
+   margin-top: 0%;
+   margin-bottom: 0%;
+   padding: 3%;
+   color: rgb(65, 16, 85);
+}
+
+/*editamos el parrafo*/
+.parraf{
+    color: var(---negro);
+    padding: 2%; 
+    margin-top: -4%;
+    font-size: 2rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+
+
+/*fondo color del cuerpo*/
+body{
+    background-color: var(---fondo);
+    margin: 0%;
+}
+
+/*eliminar subrayado de los enlaces*/
+a{
+    text-decoration: none;
+}
+
+img{   /*tamaño de la imagen principal y del logotipo*/
+    max-width: 100%;
+}
+
+header,   /*justificar logo*/
+.header_logo{
+    text-align: center;
+}
+
+
+/*editamos enlaces*/
+.navegacion {
+    display: flex; 
+    justify-content: center;
+    gap: 3%;
+    background-color: rgb(109, 66, 126);
+
+
+
+  }
+  
+  
+.navegacion-enlace {
+    color: #ffffff;
+    text-decoration: none; /* Elimina el subrayado de los enlaces, si lo hay */
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 1%;
+  }
+
+
+
+
+/*este codigo hace que los textos de h1 y h2 esten centrados y esten ubicados en la imagen principal de la pagina. EMPIEZA*/
+.header_body {
+    position: relative;
+}
+
+.header__texto {
+    position: absolute;
+    bottom:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(---negro);
+}
+
+.header__texto h1,
+.header__texto h2 {
+    margin: 0; /* Elimina el margen predeterminado de h2 y p */
+}
+/*TERMINA*/
+
+
+/* Estilos al contacto */
+h4 {
+    background-color: rgb(109, 66, 126);
+    padding: 10px;
+    margin: 0%;
+    color: #ffffff; /* Color del texto dentro del h4 */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.mi-clase {
+    font-size: 12px;
+    white-space: pre-line; /* Permite saltos de línea */
+}
+
+.emojis {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+.icon-instagram {
+    height: 30px;
+    width: 30px;
+    fill: #e4a7df; /*cambiando color de fondo de emojis con fill */
+    stroke: #ffffff;  /*cambiando color de bordes de emojis con stroke*/
+}
+
+.icon-whatsapp {
+    height: 30px;
+    width: 30px;
+    fill: #60a00d;
+    stroke: #ffffff;
+}
+
+.icon-ubi {
+    height: 30px;
+    width: 30px;
+    fill: #3fbdd3;
+    stroke: #ffffff;
+}
+
+.icon-telefono{
+    height: 30px;
+    width: 30px;
+    fill: #dae760;
+    stroke: #ffffff;
+}
+.icon-copyright{
+    height: 20px;
+    width: 20px;
+    stroke: #ffffff;
+}
+
+
+.copyr{
+    display:inline-block;
+    font-size: 12px;
+    justify-content: left; /* Centra horizontalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+
+
+
+
+/*SECCION PRODUCTOS*/
+
+
+/* CODIGO PARA MOSTRAR EL CODIGO EN FORMA HORIZONTAL CON TODOS LOS PRODUCTOS 
+.contenedor {
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 33% 33%;
+
+}
+
+.producto_imagen {
+    width: 100%;
+    height: auto;
+}*/
+
+
+
+/*ESTILOS AL TEXTO NUESTROS PRODUCTOS*/
+h5{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(65, 16, 85);
+}
+
+
+/*CODIGO PARA MOSTRAR EL CONTENIDO EN FORMA VERTICAL*/
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+}
+
+.producto {
+    border: 1px solid #c49ecf;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 30%; /* Establece el ancho al 30% para tener tres columnas */
+    box-sizing: border-box; /* el padding no afectara al ancho total del producto */
+    text-align: center; /* Centrar el contenido del producto */
+}
+
+.producto_imagen {
+    width: 50%; /* tamaño imagen */
+    height: auto;
+}
+
+.producto_nombre {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.producto_precio {
+    font-size: 20px;
+    color: green;
+}
+
+
+/* ESTILOS A BOTON DE CARRITO*/
+/* Estilos adicionales para el select y el botón */
+select {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.boton-carrito {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s; /* agregamos una transición suave para el boton*/
+}
+
+.boton-carrito:hover {
+    transform: scale(1.2); /* el boton se agrandara al pasar el mouse*/
+}
+
+
+/*estilos al icono carrito*/
+
+.icon-carrito{
+    stroke: #ffffff;
+    width: 30px;
+}
